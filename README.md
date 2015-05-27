@@ -51,6 +51,7 @@ Your file names should be formatted in a way that you want to have on your refer
 
 - Tokenization (this is just an XSL issue, I don't know how to write it there!)
 - Output folder could also be specified in the arguments
+- Larger number of tiers could be somehow speficied
 
 ## Copyright
 
