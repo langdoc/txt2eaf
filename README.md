@@ -14,7 +14,7 @@ This function is pretty well compatible with R package 'FRelan' which parses and
 
 To get started just write to Terminal:
 
-    git clone https://github.com/nikopartanen/txt2eaf
+    git clone https://github.com/langdoc/txt2eaf
 
 At first you have to install R on your computer and run these lines at Terminal (or in RStudio, or in R GUI, whatever you like):
 
