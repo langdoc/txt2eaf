@@ -2,7 +2,7 @@
 
 This is a R function that converts simply formatted text files into ELAN XML files. It has a few small demands for your text file structure and also gives as output the ELAN structure used in Saami Research Group in Saami Studies. For different output the xml2eaf.xsl file has to be modified. This is relatively simple, it is easy to use another ELAN file as a model. It is offshoot from earlier converter that was done for Kildin Saami. This is more experimental version that probably does not work always as expected if at all. This also creates automatically .pfsx files. Again, the settings in that file reflect personal preferences of Niko Partanen, and should be customized.
 
-This is a function instead of a simple script. It should be sourced and used in the following fashion:
+This is a function instead of a script. It should be sourced and used in the following fashion:
 
     txt2eaf(path = "./path/to/txt/files", source_pattern = "txt$", actor = "S1")
 
@@ -16,14 +16,24 @@ To get started just write to Terminal:
 
     git clone https://github.com/langdoc/txt2eaf
 
-At first you have to install R on your computer and run these lines at Terminal (or in RStudio, or in R GUI, whatever you like):
+There are two folders, `txt` and `eaf`. The text files should be in the `txt` folder.
 
+At first you have to install R on your computer and run these lines at Terminal (or the R part in RStudio, or in R GUI, whatever you like):
+
+    cd txt2eaf
     R
     install.packages("plyr")
     install.packages("dplyr")
     install.packages("XML")
+    txt2eaf(path = "./txt/", source_pattern = "txt$", actor = "S1")
 
-This installs the packages required by this function. It has to be done only once. Later it takes these packages through library() command.
+The packages have to be installed only once. Later that part can be skipped or replaced by commands:
+
+    library(plyr)
+    library(dplyr)
+    library(XML)
+
+The function `txt2eaf` takes three arguments. The first one is path to the folder where the text files are stored. The `source_pattern` wants to know whether there are `.txt` or `.csv` files. `actor` is the participant id for the tiers (usually this whole workflow is meant for the text which have just one "participant").
 
 You have to have the following folder structure:
 
