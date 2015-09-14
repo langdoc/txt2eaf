@@ -25,6 +25,7 @@ At first you have to install R on your computer and run these lines at Terminal 
     install.packages("plyr")
     install.packages("dplyr")
     install.packages("XML")
+    source(txt2eaf.R)
     txt2eaf(path = "./txt/", source_pattern = "txt$", actor = "S1")
 
 The packages have to be installed only once. Later that part can be skipped or replaced by commands:
