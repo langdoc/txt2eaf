@@ -74,8 +74,8 @@ files
 
 
 for (i in 1:length(files)){
-        system(paste0("java -jar /Users/niko/saxon9he.jar -s:temp/", files[i], ".xml -xsl:xml2eaf.xsl -o:eaf/", files[i], ".eaf", " Participant=", actor))
-        system(paste0("java -jar /Users/niko/saxon9he.jar -s:temp/", files[i], ".xml -xsl:xml2pfsx.xsl -o:eaf/", files[i], ".pfsx", " Participant=", actor))
+        system(paste0("java -jar ~/saxon9he.jar -s:temp/", files[i], ".xml -xsl:xml2eaf.xsl -o:eaf/", files[i], ".eaf", " Participant=", actor))
+        system(paste0("java -jar ~/saxon9he.jar -s:temp/", files[i], ".xml -xsl:xml2pfsx.xsl -o:eaf/", files[i], ".pfsx", " Participant=", actor))
 }
 
 
